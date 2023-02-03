@@ -1,0 +1,73 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #33CCCC; 
+  animation: color 9s infinite linear;
+
+
+}
+@keyframes color {
+  0%   { background: #c2ebeb; }
+  10%  { background: #ade4ae; }
+  20%  { background: #dfe7ad; }
+  30%  { background: #e6daae; }
+  40%  { background: #c3ebc4; }
+  50% { background: #d5e0e0; }
+  55%   { background: #bfc6e6; }
+  60%  { background: #f5ecef; }
+  70%  { background: #d4eed6; }
+  80%  { background: #ecdcdc; }
+  90%  { background: #d2d1ec; }
+  100% { background: #f1e3e3; }
+}
+
+canvas {
+  border: 10px solid rgb(47, 7, 226);
+}
+#table {
+  margin-right: 230px;
+  border: 3px solid rgb(47, 7, 226);
+  padding: 30px;
+  background-color:rgb(227, 232, 233);
+}
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+    
+  );
+  margin-left:-450px;
+  display: flex;
+  margin-bottom: 500px;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+
+      font-size: 80px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% top;
+  }
+}
+
